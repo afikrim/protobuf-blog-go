@@ -1,0 +1,15 @@
+version: v1
+name: buf.build/afikrim/proto-blog-go
+deps:
+  - buf.build/googleapis/googleapis
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
+    - SERVICE_SUFFIX
+    - SERVICE_PASCAL_CASE
+    - ENUM_PASCAL_CASE
+    - MESSAGE_PASCAL_CASE
+    - RPC_PASCAL_CASE
